@@ -1,0 +1,54 @@
+
+.dropbox
+{
+    display: flex;
+    justify-content: center;
+}
+body
+{
+    background-image: url("../img/bg.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+header
+{
+    background-color: #fff;
+}
+.main
+{
+    padding: 20px;
+}
+
+.dropzone
+{
+    background-image: url("../static/upload_img.png");
+    text-align: center;
+    border: 2px solid burlywood;
+    border-radius: 20px;
+    width: 80%;
+}
+
+.cover
+{
+    display: flex;
+    justify-content: center;
+}
+
+.predict
+{
+    text-align: center;
+    padding: 10px;
+    border: None;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px grey;
+    background-color: lightgreen;
+    color: white;
+}
+
+footer {
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
