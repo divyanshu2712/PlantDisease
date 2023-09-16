@@ -1,0 +1,8 @@
+Flask
+Flask_Dropzone
+numpy
+opencv_python
+Pillow
+tensorflow
+tensorflow_intel
+Gunicorn
