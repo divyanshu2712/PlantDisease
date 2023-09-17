@@ -1,8 +1,8 @@
-classes={'Apple': ['Apple_scab', 'Black_rot', 'Cedar_apple_rust', 'healthy'], 'Capsicum': ['Bacterial_spot', 'healthy'], 'Cherry': ['Powdery_mildew', 'healthy'], 'Corn': ['Cercospora_leaf_spot_Gray_leaf_spot', 'Common_rust_', 'Northern_Leaf_Blight', 'healthy'], 'Grape': ['Black_rot', 'Esca_(Black_Measles)', 'Leaf_blight_(Isariopsis_Leaf_Spot)', 'healthy'], 'Peach': ['Bacterial_spot', 'healthy'], 'Strawberry': ['Leaf_scorch', 'healthy'], 'Tomato': ['Bacterial_spot', 'Early_blight', 'Late_blight', 'Leaf_Mold', 'Septoria_leaf_spot', 'Spider_mites_Two_spotted_spider_mite', 'Target_Spot', 'Tomato_YellowLeaf__Curl_Virus', 'Tomato_mosaic_virus', 'healthy'], 'Wheat': ['Healthy', 'septoria', 'stripe_rust'], 'Potato': ['Early_blight', 'Late_blight', 'healthy'],'Chilli': ['healthy', 'leaf curl', 'leaf spot', 'whitefly', 'yellowish'], 'Rice': ['Bacterialblight', 'Blast', 'Brownspot', 'Tungro', 'Healthy'], 'Sugarcane': ['healthy', 'red_rot', 'red_stripe', 'rust'], 'Tea': ['algal_leaf', 'anthracnose', 'bird_eye_spot', 'brown_blight', 'healthy', 'red_leaf_spot']}
+classes={'Apple': ['Apple_scab', 'Black_rot', 'Cedar_apple_rust', 'healthy'], 'Capsicum': ['Bacterial_spot', 'healthy'], 'Cherry': ['Powdery_mildew', 'healthy'], 'Corn': ['Cercospora_leaf_spot_Gray_leaf_spot', 'Common_rust_', 'Northern_Leaf_Blight', 'healthy'], 'Grape': ['Black_rot', 'Esca_(Black_Measles)', 'Leaf_blight_(Isariopsis_Leaf_Spot)', 'healthy'], 'Peach': ['Bacterial_spot', 'healthy'], 'Strawberry': ['Leaf_scorch', 'healthy'], 'Tomato': ['Bacterial_spot', 'Early_blight', 'Late_blight', 'Leaf_Mold', 'Septoria_leaf_spot', 'Spider_mites_Two_spotted_spider_mite', 'Target_Spot', 'Tomato_YellowLeaf__Curl_Virus', 'Tomato_mosaic_virus', 'healthy'], 'Wheat': ['healthy', 'septoria', 'stripe_rust'], 'Potato': ['Early_blight', 'Late_blight', 'healthy'],'Chilli': ['healthy', 'leaf curl', 'leaf spot', 'whitefly', 'yellowish'], 'Rice': ['Bacterialblight', 'Blast', 'Brownspot', 'Tungro', 'healthy'], 'Sugarcane': ['healthy', 'red_rot', 'red_stripe', 'rust'], 'Tea': ['algal_leaf', 'anthracnose', 'bird_eye_spot', 'brown_blight', 'healthy', 'red_leaf_spot']}
 
 cure={
     "Potato":{
-        'EarlyBlight':[
+        'Early_blight':[
             "Prune or stake plants to improve air circulation and reduce fungal problems.",
             "Make sure to disinfect your pruning shears (one part bleach to 4 parts water) after each cut.",
             "Keep the soil under plants clean and free of garden debris. Add a layer of organic compost to prevent the spores from splashing back up onto vegetation.",
@@ -12,7 +12,7 @@ cure={
             "SERENADE Garden is a broad spectrum, preventative bio-fungicide recommended for the control or suppression of many important plant diseases. For best results, treat prior to foliar disease development or at the first sign of infection. Repeat at 7-day intervals or as needed.",
             "Remove and destroy all garden debris after harvest and practice crop rotation the following year.",
             "Burn or bag infected plant parts. Do NOT compost."],
-        "LateBlight":[
+        "Late_blight":[
             "Remove Infected Plant Parts: As soon as you notice signs of late blight (brown lesions on leaves, dark spots on fruit), remove and destroy the infected plant parts. Do not compost infected material, as the spores can survive composting.",
             "Prune for Air Circulation: Prune the plants to improve air circulation. This helps reduce humidity around the plants, making it less favorable for the disease to spread.",
             "Water at the Base: Water the plants at the base using drip irrigation or a soaker hose to keep the foliage dry. Avoid overhead watering, as wet foliage can promote the spread of late blight.",
@@ -113,7 +113,7 @@ cure={
         "Proper Spacing: Ensure proper spacing between grapevines to improve air circulation and reduce humidity, which can favor disease development.",
     ]
 },
-"Peach":[
+"Peach":{"Bacterial_spot":[
     "Copper-Based Sprays: Apply copper-based bactericides during the dormant season and as directed on the product label to control bacterial spot.",
     "Pruning: Prune and remove infected branches and leaves, cutting at least 2-4 inches below visible symptoms. Sterilize pruning tools between cuts.",
     "Sanitation: Keep the area around the peach trees clean by removing fallen leaves and fruit that may harbor the bacteria.",
@@ -121,8 +121,8 @@ cure={
     "Resistant Varieties: Consider planting peach tree varieties that are less susceptible to bacterial spot.",
     "Copper Fungicide Applications: Copper-based fungicides can also help manage bacterial spot, but they should be used according to label instructions.",
     "Monitor and Scout: Regularly inspect your peach trees for symptoms and take action at the first sign of bacterial spot.",
-],
-"Strawberry":[
+]},
+"Strawberry":{"Leaf_scorch":[
     "Fungicides: Apply fungicides labeled for leaf scorch control. Follow recommended application rates and schedules, especially during the growing season.",
     "Pruning: Prune and remove infected leaves to reduce the spread of the disease. Dispose of pruned material away from the strawberry patch.",
     "Sanitation: Keep the strawberry patch clean by removing fallen leaves and debris, which can serve as a source of inoculum.",
@@ -130,7 +130,7 @@ cure={
     "Proper Spacing: Ensure proper spacing between strawberry plants to improve air circulation and reduce humidity, which can favor disease development.",
     "Water Management: Avoid overhead irrigation, as wet foliage can promote the spread of the disease. Use drip or soaker hose irrigation.",
     "Mulching: Apply mulch to the strawberry bed to prevent soil splash, which can spread the pathogen from the soil to the leaves."
-],
+]},
 "Tomato":{
     "Bacterial_spot": [
         "Copper-Based Sprays: Apply copper-based bactericides to control bacterial spot. Follow recommended application rates and schedules.",
@@ -324,14 +324,14 @@ cure={
 
 cure_link={
     "Potato":{
-    "EarlyBlight": [
+    "Early_blight": [
         ("Mancozeb 75% WP", "https://www.iffcobazar.in/en/product/satsuma-mancozeb-75-wp"),
         ("Clorantraniliprole 18.5% SC", "https://www.iffcobazar.in/en/product/shimo-chlorantraniliprole-18-5-sc-150ml"),
         ("Fludioxonil 5% + Mancozeb 64% WP", "https://www.acetamiprid.com/fludioxonil-98tc/"),
         ("Azoxystrobin 18% + Mancozeb 64% WP", "https://www.iffcobazar.in/en/product/sukoyaka-azoxystrobin-11-tebuconazole-18-3-sc"),
         ("Difenoconazole 20% EC", "https://www.napanta.com/pesticide-products/difenoconazole-25-ec/sumitomo-dimension/")
     ],
-    "LateBlight":[
+    "Late_blight":[
     ("Folio Gold Syngenta", "https://shop.plantix.net/en/products/pesticides/d2d93b04-a5ff-4ea6-acc8-af7e9a70fd55/folio-gold-syngenta/?utm_source=plantix_web&utm_medium=web_library&utm_campaign=ProductSliderOnDiseasePage"),
     
     ("OHHO Dharmaj Crop Guard", "https://shop.plantix.net/en/products/pesticides/29589de8-d208-4fcb-ad59-b7081c922d09/ohho-dharmaj-crop-guard/?utm_source=plantix_web&utm_medium=web_library&utm_campaign=ProductSliderOnDiseasePage"),

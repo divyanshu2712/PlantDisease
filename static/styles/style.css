@@ -34,6 +34,7 @@ header
 {
     display: flex;
     justify-content: center;
+    text-align: center;
 }
 
 .predict
@@ -60,7 +61,7 @@ footer {
     width: 100%;
   }
 
-#dname{
+#d_name{
     margin: 10px;
     padding: 5px;
     border-radius: 5px;
