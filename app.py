@@ -9,6 +9,20 @@ import cv2
 
 image=None
 access=False
+Apple=tf.keras.models.load_model("models/Apple")
+Capsicum=tf.keras.models.load_model("models/Capsicum")
+Cherry=tf.keras.models.load_model("models/Cherry")
+Chilli=tf.keras.models.load_model("models/Chilli")
+Corn=tf.keras.models.load_model("models/Corn")
+Grape=tf.keras.models.load_model("models/Grape")
+Peach=tf.keras.models.load_model("models/Peach")
+Potato=tf.keras.models.load_model("models/Potato")
+Rice=tf.keras.models.load_model("models/Rice")
+Strawberry=tf.keras.models.load_model("models/Strawberry")
+Sugarcane=tf.keras.models.load_model("models/Sugarcane")
+Tea=tf.keras.models.load_model("models/Tea")
+Tomato=tf.keras.models.load_model("models/Tomato")
+Wheat=tf.keras.models.load_model("models/Wheat")
 models = {
     "Apple": Apple,
     "Capsicum": Capsicum,
