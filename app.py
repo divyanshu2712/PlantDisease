@@ -9,7 +9,22 @@ import cv2
 
 image=None
 access=False
-
+models = {
+    "Apple": Apple,
+    "Capsicum": Capsicum,
+    "Cherry": Cherry,
+    "Chilli": Chilli,
+    "Corn": Corn,
+    "Grape": Grape,
+    "Peach": Peach,
+    "Potato": Potato,
+    "Rice": Rice,
+    "Strawberry": Strawberry,
+    "Sugarcane": Sugarcane,
+    "Tea": Tea,
+    "Tomato": Tomato,
+    "Wheat": Wheat
+}
 app = Flask(__name__)
 app.config.update(DROPZONE_TIMEOUT=6*5*1000)
 app.config['DROPZONE_UPLOAD_MULTIPLE'] = False
@@ -31,9 +46,6 @@ def predict():
         image=np.array(Image.open(BytesIO(f.read())))
         image=cv2.resize(image,(256,256))
         image=np.expand_dims(image,axis=0)
-        # pred=model.predict(image)
-        # class_pred=classes[np.argmax(pred)]
-        # confidence=round(np.max(pred)*100,2)
         access=True
     return render_template("predict.html")
 @app.route('/result',methods=["POST"])
@@ -41,7 +53,8 @@ def result():
     global image
     a=request.form.get("d_name")
     print(a)
-    model=tf.keras.models.load_model(f"models/{a}")
+    # model=tf.keras.models.load_model(f"models/{a}")
+    model=models[a]
     pred=model.predict(image)
     class_pred=classes[a][np.argmax(pred)]
     confidence=round(np.max(pred)*100,2)
