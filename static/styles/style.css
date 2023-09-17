@@ -9,6 +9,7 @@ body
     background-image: url("../img/bg.jpg");
     background-size:cover;
     background-repeat: no-repeat;
+    z-index: -1;
 }
 
 header
@@ -46,9 +47,21 @@ header
     color: white;
 }
 
+.predict:hover{
+    background-color: lightblue;
+    color: black;
+}
+
+
 footer {
     background-color: #fff;
     position: absolute;
     bottom: 0;
     width: 100%;
   }
+
+#dname{
+    margin: 10px;
+    padding: 5px;
+    border-radius: 5px;
+}

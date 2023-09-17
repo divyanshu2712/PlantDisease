@@ -34,7 +34,25 @@
   </div>
   <br><br>
   <div class="cover">
-    <a href="/result"><button class="predict">Predict Now</button></a>
+    <form method="POST"  action="/result">
+      <select name="d_name" id="d_name">
+        <option value="Apple">Apple</option>
+        <option value="Capsicum">Capsicum</option>
+        <option value="Cherry">Cherry</option>
+        <option value="Chilli">Chilli</option>
+        <option value="Corn">Corn</option>
+        <option value="Grape">Grape</option>
+        <option value="Peach">Peach</option>
+        <option value="Potato">Potato</option>
+        <option value="Rice">Rice</option>
+        <option value="Strawberry">Strawberry</option>
+        <option value="Sugarcane">Sugarcane</option>
+        <option value="Tea">Tea</option>
+        <option value="Tomato">Tomato</option>
+        <option value="Wheat">Wheat</option>
+      </select>
+      <button class="predict">Predict Now</button>
+      </form>
   </div>
   </div>
   <!-- Footer -->

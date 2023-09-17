@@ -7,7 +7,7 @@ import numpy as np
 import cv2
 
 
-model=tf.keras.models.load_model("models/1")
+model=tf.keras.models.load_model("models/Potato")
 classes=["EarlyBlight","LateBlight","Healthy"]
 class_pred=""
 confidence=None
@@ -87,8 +87,10 @@ def predict():
         confidence=round(np.max(pred)*100,2)
         access=True
     return render_template("predict.html")
-@app.route('/result')
+@app.route('/result',methods=["GET","POST"])
 def result():
+    a=request.form.get("Hi")
+    print(a)
     global confidence
     if confidence!=None:
         if(class_pred=="Healthy"):
